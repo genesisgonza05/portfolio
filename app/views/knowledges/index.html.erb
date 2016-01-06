@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<%= form_tag knowledges_path, :method => :get, :remote => true do %>
+  <div class="search">
+    <%= label_tag "search" %><br>
+    <%= text_field_tag "search" %>
+  </div>
+  <div class="actions">
+    <%= submit_tag "Search" %>
+  </div>
+<% end %>
+
+
+<h1>Listing Knowledges</h1>
+
+<div id="knowledges">
+  <%= render @knowledges %>
+<br>
+
+<%= link_to 'New Knowledge', new_knowledge_path %>
