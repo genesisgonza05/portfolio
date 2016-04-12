@@ -1,2 +1,34 @@
 .n-letter
   width: 53px
+
+#about-me
+  .page-header
+    .menu-button
+      margin: 0
+      padding: 20px 0 13px 25px
+      a
+        padding: 10px 19px
+        display: inline-block
+        text-decoration: none
+        background-color: $lighter-colour
+        color: $primary-color
+        border: 1px solid $backgroun-darker
+      li:first-child
+        a
+          border-radius: 5px 0 0 5px
+      li:last-child
+        a
+          border-left: 0
+          border-radius: 0 5px 5px 0
+      .active,
+      a:hover
+        background-color: $backgroun-darker
+        color: $font-darker
+        border: 1px solid $backgroun-darker
+
+    .menu-button,
+    .title,
+    li
+      width: auto
+      display: inline-block
+
