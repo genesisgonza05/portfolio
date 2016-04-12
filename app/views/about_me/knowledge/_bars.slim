@@ -1,0 +1,8 @@
+.knowledge
+  h3.title #{title}
+  - object.each_with_index do | knowledge, index |
+    div id="#{bar_by_color(index, title)}" class="horizontal-bar"
+      =knowledge.noun
+      div class="percentage-bar pull-right #{porcentage_class_by_range(knowledge)}"
+        | #{knowledge.percentage}%
+

@@ -1,16 +1,29 @@
 .home-container#wrap
   .header.nav.navbar.navbar-default role="navigation" 
     = render "shares/header"
-  .container
-    .page-header
-      h1 Génesis González
+  .container#about-me
+    .page-header.col-md-12
+      .title.pull-left
+        h1 Génesis González
+      ul.menu-button.pull-right
+        li.pull-left
+          =link_to "Biografía", "#", class: "active", data: { show: "biography" }
+        li.pull-left
+          =link_to "Habilidades", "#", data: { show: "abilities" }
+        li.pull-left
+          =link_to "Conocimientos", "#", data: { show: "knowledge" }
+
     .page-content.col-md-12
-      .content-left.col-md-4#knowledge
-        = render "about_me/knowledge"
-      .content-center.col-md-4#biography
+      #biography.content-show.col-md-12
         = render "about_me/biography"
-      .content-right.col-md-4#abilities
+
+      #abilities.content-show.col-md-12.hidden
         = render "about_me/abilities"
+
+      #knowledge.content-show.col-md-12.hidden
+        = render "about_me/knowledge"
 
 #footer
   =render "shares/footer"
+
+script jQuery.noConflict()
