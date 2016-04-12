@@ -11,14 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150831213953) do
+ActiveRecord::Schema.define(version: 20160411160749) do
 
   create_table "knowledges", force: :cascade do |t|
-    t.string   "name"
-    t.string   "type"
+    t.string   "noun"
+    t.string   "type_group"
     t.integer  "percentage"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "description"
   end
 
 end
