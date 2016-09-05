@@ -2,6 +2,9 @@ html,
 body
   height: 100%
 
+.hidden-box
+  background: none
+
 #wrap
   min-height: 100%
   height: auto
@@ -15,13 +18,18 @@ body
 .page-header
   width: 95%
   margin: 0 auto
-
-.page-header
+  display: block
   border: none
 
 #footer
   height: 60px
   background-color: $basic-silver
+  position: relative
+  .container
+    position: absolute
+    height: 60px
+    p
+      margin: 0
 
 .container.credit
   margin: 20px 0
@@ -42,6 +50,7 @@ body
   float: left
 
 .page-content
+  display: -webkit-inline-box
   .col-md-3,
   .col-md-4,
   .col-md-6,

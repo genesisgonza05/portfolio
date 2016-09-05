@@ -7,11 +7,11 @@
   a.navbar-brand href="/" Home
 #bs-example-navbar-collapse-1.collapse.navbar-collapse
   ul.nav.navbar-nav
-    li.active
-      a href="/about_me"  Acerca de mí
-    li
-      a href="#"  Trabajos
-    li.dropdown
+    li class="#{active_section(about_me_path)}"
+      = link_to "Acerca de mí", about_me_path
+    li class="#{active_section('works')}"
+      = link_to "Trabajos", "#"
+    li class="dropdown #{active_section('works')}"
       a.dropdown-toggle data-toggle="dropdown" href="#" 
         | Articulos
         b.caret
@@ -26,8 +26,8 @@
         li.divider
         li
           a href="#"  Construccion 
-    li
-      a href="#"  Contacto
+    li class="dropdown #{active_section('contact')}"
+      = link_to "Contacto", "#"
 
   ul.nav.navbar-nav.navbar-right
     li

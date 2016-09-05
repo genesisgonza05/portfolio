@@ -1,11 +1,19 @@
 AboutMe =
   new : ->
     obj = @
-    $("#about-me .page-header").on "click", "a", ->
-      $("#about-me .page-header a").removeClass("active")
-      $(this).addClass("active")
-      $(".home-container .content-show").addClass("hidden")
-      obj.to_show($(this))
+    $(".nav .page-header").on "click", "a", ->
+      #$("#about-me .page-header a").removeClass("active")
+      #$(this).addClass("active")
+      #$(".home-container .content-show").addClass("hidden")
+      #obj.to_show($(this))
+    obj.show_box_by()
+
+  show_box_by: ->
+    $(".with-tooltips").on "click", ->
+      section = $(this).parent()
+      box = $(".box-tool", section)
+      $(".box-tool").addClass("hidden")
+      box.removeClass("hidden")
 
   to_show: (selector) ->
     obj = @

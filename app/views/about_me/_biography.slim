@@ -9,29 +9,50 @@
     | Si desea agregar al mundo tecnológico, no busque mas, 
     =link_to "¡contacteme!", "#"
     #contact-me
-      =image_tag("cel.png", class: "icon-contact-me")
-      =image_tag("email.png", class: "icon-contact-me")
-      =image_tag("in.png", class: "icon-contact-me")
+      .section-phone
+        =image_tag("cel.png", class: "icon-contact-me  icon-contact-me-phone with-tooltips")
+        .phone-box-tool.box-tool.hidden
+          | (0416) 816-76-98
 
+      .section-email
+        =image_tag("email.png", class: "icon-contact-me icon-contact-me-email with-tooltips")
+        .email-box-tool.box-tool.hidden
+          | genesisgonza05@gmail.com
+
+      = link_to 'https://ve.linkedin.com/in/genesis-gonzalez-479814109', :target => "_blank" do
+        =image_tag("in.png", class: "icon-contact-me icon-contact-me-linkedin")
 
 .content-center.col-md-12.section-picture
-  =image_tag("me.png", class: "picture-me")
+  .col-md-4
+    .dialog.hidden-box.col-md-12
+      h4 Hay que luchar por lo que queremos y no conformarse con lo que el mundo nos da
 
-  .dialog.dialog-1
-    h4 Soy una programadora que se preocupa por su ambiente de trabajo, creo que las buenas ideas vienen en un entorno práctico, cómodo, tranquilo, pero con opciones para hacerlo más divertido cuando sea necesario
+    .dialog.dialog-1.col-md-12
+      h4 Creo plenamente en las oportunidades que Dios da, y en las bendiciones que nos ofrece cada día
 
-  .dialog.dialog-2
-    h4 Como persona, me importan los pensamientos de los demás, pero soy segura de mis ideas
+    .dialog.dialog-2.col-md-12
+      h4 Soy una persona que generalmente esta segura de las ideas que aporta, y me gusta escuchar la idea de los demás
 
-  .dialog.dialog-3
-    h4 Amo lo que hago, y pienso en alternativas para la solucion de problemas, colocando cuidado y compromiso, siendo responsable de mi trabajo
+  .col-md-4
+    .dialog.dialog-6.col-md-12
+      h4 Hay que luchar por lo que queremos y no conformarse con lo que el mundo nos da
 
-  .dialog.dialog-4
-    h4 Creo plenamente en las oportunidades que Dios nos da, y en las bendiciones que nos ofrece cada día
+    .image-center.col-md-12
+      =image_tag("me.png", class: "picture-me")
 
-  .dialog.dialog-5
-    h4 Creo que todos tenemos un potencial extraordinario, solo que muchos que no saben cómo encontrarlo
+    .dialog.dialog-3.col-md-12
+      h4 Soy una programadora que se preocupa por su ambiente de trabajo, creo que las buenas ideas vienen en un entorno práctico, cómodo, tranquilo, con opciones para hacerlo más divertido cuando sea necesario
 
-  .dialog.dialog-6
-    h4 Hay que luchar por lo que queremos y no conformarse con lo que el mundo nos da
+  .col-md-4
+    .dialog.hidden-box.col-md-12
+      h4 Hay que luchar por lo que queremos y no conformarse con lo que el mundo nos da
+
+    .dialog.dialog-4.col-md-12
+      h4 Creo que todos tenemos un potencial extraordinario, solo que muchos no saben cómo usarlo
+
+    .dialog.dialog-5.col-md-12
+      h4 Amo lo que hago, y pienso en alternativas para la solucion de problemas, colocando cuidado y compromiso, siendo responsable de mi trabajo
+
+
+
 
