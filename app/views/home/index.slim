@@ -1,30 +1,145 @@
-.home-container#wrap
-  .header.nav.navbar.navbar-default role="navigation" 
-    = render "shares/header"
-  .container.landing-box#first-content
-    .section.section-center.col-sm-12
-      h1 Intento que mi filosofía de vida sea
-      h1 "Vive cada día como si fuera el ultimo de tu vida"
-  .container.landing-box#second-content
-    .section.section-right.col-sm-12
-      h2 La tecnología
-      h2 avanza cada día,
-      h2 y yo, no me quiero
-      h2 quedar atras.
-  .container.landing-box#last-content
-    .section.section-right.col-sm-12
-      h2 La tecnología
-      h2 avanza cada día,
-      h2 y yo, no me quiero
-      h2 quedar atras.      
-  .container.landing-box#other-content
-    .section.section-left.col-sm-12
-      h2 La tecnología
-      h2 avanza cada día,
-      h2 y yo, no me quiero
-      h2 quedar atras.    
+nav.navbar.navbar-default.navbar-fixed-top.topnav role="navigation"
+  .container.topnav
+    .navbar-header
+      button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a class="navbar-brand topnav" href="/" Home
+
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+        li
+          a href="#about" About
+        li
+          a href="#services" Services
+        li
+          a href="#contact" Contact
+
+a name="about"
+.intro-header
+  .container
+    .row
+      .col-lg-12
+        .intro-message
+          img class="side-image me-image" src="/assets/me-2.png" alt=""
+          .section-title-right
+            img class="im-image" src="/assets/im-2.png" alt=""
+            h1 Génesis Gonzalez
+            h3 Trata siempre buscar la felicidad, pero..
+            h3 No olvides de disfrutar el día de hoy
+            hr.intro-divider
+            ul.list-inline.intro-social-buttons
+              li
+                a href="#" class="btn btn-default btn-lg social-icon icon-in"
+              li
+                a href="#" class="btn btn-default btn-lg social-icon icon-skype"
+              li
+                a href="#" class="btn btn-default btn-lg social-icon icon-insta"
+
+
+a name="services"
+.content-section-a-one.content-section-a
+  .container
+    .row
+      .col-lg-5.col-sm-6
+        hr.section-heading-spacer
+        .clearfix
+        h2.section-heading
+          | Death to the Stock Photo:
+          br
+          | Special Thanks
+
+        p.lead
+          | A special thanks to 
+          a target="_blank" href="http://join.deathtothestockphoto.com/" Death to the Stock Photo
+          |  for providing the photographs that you see in this template. Visit their website to become a member.
+
+      .col-lg-5.col-lg-offset-2.col-sm-6
+        img class="img-responsive" src="/assets/ipad.png" alt=""
+
+
+.content-section-b
+  .container
+    .row
+      .col-lg-5.col-lg-offset-1.col-sm-push-6.col-sm-6
+        hr.section-heading-spacer
+        .clearfix
+        h2.section-heading
+          | 3D Device Mockups
+          br
+          | by PSDCovers
+        p.lead
+          | Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by 
+          a target="_blank" href="http://www.psdcovers.com/" PSDCovers
+          | ! Visit their website to download some of their awesome, free photoshop actions!
+      .col-lg-5.col-sm-pull-6.col-sm-6
+        img class="img-responsive" src="/assets/dog.png" alt=""
+
+
+.content-section-a
+  .container
+    .row
+      .col-lg-5.col-sm-6
+        hr.section-heading-spacer
+        .clearfix
+        h2.section-heading
+          | Google Web Fonts and
+          br
+          | Font Awesome Icons
+        p.lead
+          | This template features the 'Lato' font, part of the
+          a target="_blank" href="http://www.google.com/fonts" Google Web Font library
+          | , as well as 
+          a target="_blank" href="http://fontawesome.io" icons from Font Awesome
+          | .
+      .col-lg-5.col-lg-offset-2.col-sm-6
+        img class="img-responsive" src="/assets/phones.png" alt=""
 
 
 
-#footer
-  =render "shares/footer"
+a name="contact"
+.banner
+  .container
+    .row
+      .col-lg-6
+        h2 Connect to Start Bootstrap:
+      .col-lg-6
+        ul.list-inline.banner-social-buttons
+          li
+            a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"
+              i.fa.fa-twitter.fa-fw
+              span.network-name Twitter
+          li
+            a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"
+            i.fa.fa-github.fa-fw
+            span.network-name Github
+          li
+            a href="#" class="btn btn-default btn-lg"
+              i.fa.fa-linkedin.fa-fw
+              span.network-name Linkedin
+
+
+
+footer
+  .container
+    .row
+      .col-lg-12
+        ul.list-inline
+          li
+            a href="#" Home
+          li.footer-menu-divider
+            | &sdot;
+          li
+            a href="#about" About
+          li.footer-menu-divider
+            | &sdot;
+          li
+            a href="#services" Services
+          li.footer-menu-divider
+            | &sdot;
+          li
+            a href="#contact" Contact
+        p.copyright.text-muted.small
+          | Copyright &copy; Your Company 2014. All Rights Reserved
