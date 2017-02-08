@@ -39,6 +39,9 @@ h6
 .content-section-b
   background: url(/assets/refresh.jpg) no-repeat fixed center
 
+#education-section
+  background: url(/assets/bg-1.jpg) no-repeat fixed center
+
 .me-image
   left: 0
   z-index: 1
@@ -46,7 +49,8 @@ h6
 
 .side-image
   position: absolute
-  border-radius: 58px
+  width: 538px
+  opacity: 0.7
 
 .im-image
   width: 10%
@@ -55,10 +59,12 @@ h6
   z-index: 1
   top: 0
 
+.im-box:hover > .intro-header
+  padding-bottom: 47px
+
 .intro-header
   padding-bottom: 59px
-  background-color: #f8f8f8
-  background-size: cover
+  background: $color-primary
   h1,
   h3,
   ul
@@ -75,7 +81,7 @@ h6
 
 .intro-message h1
   margin: 65px 0 0 0
-  text-shadow: 2px 1px 8px #1a1d55
+  text-shadow: 2px 1px 8px #8a6d3b
   font-size: 70px
 
 .intro-divider
@@ -85,7 +91,7 @@ h6
 
 .intro-message h3,
 .intro-message h2,
-  text-shadow: 2px 1px 13px #f12c22
+  text-shadow: 2px 1px 13px #9c27b0
 
 @media(max-width:767px)
   .intro-message
@@ -122,7 +128,7 @@ h6
   background-size: cover
 
 .content-section-a-one
-  background-color: $background-secondary-orange
+  background-color: $background-primary
 
 .section-heading 
   margin-bottom: 30px
@@ -140,7 +146,7 @@ h6
 
 .banner h2
   margin: 0
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.6)
+  text-shadow: 2px 2px 3px #9c27b0
   font-size: 3em
 
 .banner ul
@@ -158,7 +164,6 @@ h6
 @media(max-width:767px)
   .banner h2
     margin: 0
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6)
     font-size: 3em
 
     ul.banner-social-buttons li
@@ -188,8 +193,7 @@ p.copyright
   position: relative
 
 .background-nav
-  background-color: $background-primary-purple
-  opacity: 0.8
+  background-color: #2b0922
   height: 100%
   width: 100%
   position: absolute
